@@ -21,17 +21,12 @@ export class CategoriasPage {
   }
 
   ionViewDidLoad() {
-    this.categoraService.findALL()
+    this.categoraService.findAll()
     .subscribe(response=>{
       this.items = response;
     },
-    error=>{
-      console.log(error);
-    });
-    
-
-
-    
+    error=>{});
+     
   }
 
 }
